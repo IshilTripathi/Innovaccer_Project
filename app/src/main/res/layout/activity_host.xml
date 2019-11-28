@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ContraintLayoutHost"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_background"
+    tools:context=".HostActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Welcome Back!"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView2"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Please Fill up this Form to Be a Host"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailHostLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailHostLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Host Email"
+        android:textColorHint="@color/primaryOnColor"
+        app:boxStrokeColor="@color/boxStrokeColorFocused"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/primaryLightColor"
+        app:errorEnabled="true"
+
+        app:errorIconTint="@color/design_default_color_error"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/primaryTextColor"
+        app:hintTextColor="@color/primaryOnColor"
+        app:layout_constraintBottom_toTopOf="@+id/phoneHostLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/emailHostEditText"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneHostLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Contact Number"
+        android:textColorHint="@color/primaryOnColor"
+        app:boxStrokeColor="@color/boxStrokeColorFocused"
+        app:endIconMode="clear_text"
+
+        app:endIconTint="@color/primaryLightColor"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/design_default_color_error"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/primaryTextColor"
+        app:hintTextColor="@color/primaryOnColor"
+        app:layout_constraintBottom_toTopOf="@+id/nameHostLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailHostLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/phoneHostEditText"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameHostLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Host Name"
+        android:textColorHint="@color/primaryOnColor"
+        app:boxStrokeColor="@color/boxStrokeColorFocused"
+        app:endIconMode="clear_text"
+
+        app:endIconTint="@color/primaryLightColor"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/design_default_color_error"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/primaryTextColor"
+        app:hintTextColor="@color/primaryOnColor"
+        app:layout_constraintBottom_toTopOf="@+id/submitHost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneHostLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/nameHostEditText"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitHost"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@color/primaryDarkColor"
+        android:elevation="50dp"
+        android:text="....Become Host...."
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkOutHostLayout" />
+
+    <ProgressBar
+        android:id="@+id/progressBarHost"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

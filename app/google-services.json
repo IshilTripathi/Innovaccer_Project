@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "708291678660",
+    "firebase_url": "https://jobproject-da2d0.firebaseio.com",
+    "project_id": "jobproject-da2d0",
+    "storage_bucket": "jobproject-da2d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708291678660:android:4df7ce2d26af169d35d491",
+        "android_client_info": {
+          "package_name": "com.example.jobproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708291678660-org4o2p7861erku76oqujuondjj32ldj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobproject",
+            "certificate_hash": "f3b934e2d66d0bfbfdeef9abc8bad2ffe57e6ad7"
+          }
+        },
+        {
+          "client_id": "708291678660-osgle4amtjttq9ev9fi0e7v93hu9j7b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxtPG0bLHZbBQPIDfKtt3BQgwYIZjah3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708291678660-osgle4amtjttq9ev9fi0e7v93hu9j7b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
